@@ -20508,7 +20508,7 @@
 					headers.length === 3 ? headers.push(" Deadline ") : null;
 				
 					if (headers.length === 4) {
-						var folders = dataArr.map(function(document) { return document.name;});
+						var folders = [];
 						var i, j;
 						
 						for (i = 0; i < dataObjArr.length; i++) {
@@ -20537,14 +20537,15 @@
 								}
 							});
 							// FQ Folder header always comes before other headers, given in problem
-							if ((j = folders.indexOf(dataObjArr[i][headers[0]].replace(/^\s+|\s+$/g, ''))) >= 0) {
+							var folderName = dataObjArr[i][headers[0]].replace(/^\s+|\s+$/g, '');
+							if ((j = folders.indexOf(folderName)) >= 0) {
 								dataArr[j]['procedures'].push(obj);
 							} else {
 								dataArr.push({
-									name: dataObjArr[i][headers[0]].replace(/^\s+|\s+$/g, ''),
+									name: folderName,
 									procedures: [obj]
 								})
-								folders.push(dataObjArr[i][headers[0]].replace(/^\s+|\s+$/g, ''));
+								folders.push(folderName);
 							};
 						}
 					}
