@@ -1,0 +1,23 @@
+{
+  "name": "protoParser",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.10.1",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "ejs": "~2.1.4",
+    "express": "~4.11.0",
+    "jsx-loader": "^0.13.2",
+    "mongoose": "^4.0.8",
+    "morgan": "~1.5.1",
+    "node-jsx": "^0.13.3",
+    "react": "^0.13.3",
+    "reflux": "^0.2.11",
+    "whatwg-fetch": "^0.9.0",
+    "xlsx": "^0.8.0"
+  }
+}
