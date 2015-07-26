@@ -84,7 +84,6 @@ module.exports = React.createClass({
 							var trimmedHeader = header.replace(/^\s+|\s+$/g, '');
 							if (dataObjArr[i][header]) {
 								if (/Frequency/i.test(trimmedHeader)) {
-									//console.log(dataObjArr[i][header]);
 									switch(dataObjArr[i][header]) {
 									case " Monthly ":
 										obj[trimmedHeader] = 1;
@@ -92,7 +91,7 @@ module.exports = React.createClass({
 									case " Quarterly ":
 										obj[trimmedHeader] = 2;
 										break;
-									case " Yearly ":
+									case " Annual ":
 										obj[trimmedHeader] = 3;
 										break;
 									} 
