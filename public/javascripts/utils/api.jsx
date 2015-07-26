@@ -1,5 +1,6 @@
 var Fetch = require('whatwg-fetch');
-var rootUrl = process.env.PORT ? "https://fqparser.herokuapp.com/" : "http://localhost:3000/";
+//var rootUrl = process.env.PORT ? "https://fqparser.herokuapp.com/" : "http://localhost:3000/";
+var rootUrl = "https://fqparser.herokuapp.com/";
 
 module.exports = {
 	get: function(url) {
