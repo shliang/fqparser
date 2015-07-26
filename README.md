@@ -5,4 +5,4 @@ This Node app is built using Flux architecture (Reflux module), with React.js as
 
 Live application can be found here: [https://fqparser.herokuapp.com/](https://fqparser.herokuapp.com/).
 
-Note: this is designed specifically for handles files with headers FQ Folder (type: string), Description (type: string), Frequency (type: String; options: Monthly, Quarterly, Annual), Deadline (type: number)
+Note: this is designed specifically for handling files with headers FQ Folder (type: string), Description (type: string), Frequency (type: String; options: Monthly, Quarterly, Annual), Deadline (type: number)
