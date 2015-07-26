@@ -57413,8 +57413,9 @@
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var Fetch = __webpack_require__(246);
-	var rootUrl = process.env.PORT ? "https://fqparser.herokuapp.com/" : "http://localhost:3000/";
+	var Fetch = __webpack_require__(246);
+	//var rootUrl = process.env.PORT ? "https://fqparser.herokuapp.com/" : "http://localhost:3000/";
+	var rootUrl = "https://fqparser.herokuapp.com/";
 
 	module.exports = {
 		get: function(url) {
@@ -57437,7 +57438,6 @@
 			});
 		}
 	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
 /* 246 */
